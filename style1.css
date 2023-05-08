@@ -1,0 +1,152 @@
+/* ASSETS */
+:root {
+     --font: 'Poppins';
+     --font2: 'Montserrat';
+     --color1: #FAFAFA;
+     --color2: #325A5E;
+     --color3: #fff;
+     --color4: #E8A558;
+}
+
+/* MAIN */
+*{
+     box-sizing: border-box;
+     margin: 0 20px;
+     padding: 0;
+}
+
+html{
+     scroll-behavior: smooth;
+     scrollbar-width: none;
+}
+
+body {
+     background-color: var(--color1);
+     display: grid;
+     grid-template-areas: 
+     'header'
+     'content'
+     'food-drink'
+     ;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 6fr 4fr;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+     overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+     display: none;
+}
+
+/* Header */
+
+header{
+     grid-area: 'header header';
+     margin: 10px 0 0 ;
+}
+
+header .navbar{
+     display: flex;
+     align-items: center;
+}
+
+.wrap-list .item{
+     display: inline-block;
+}
+
+.item a{
+     font-family: var(--font);
+     font-size: 18px;
+     font-weight: 600;
+     list-style: none;
+     text-decoration: none;
+     color: var(--color2);
+}
+
+#active a{
+     color: #E8A558;
+}
+
+.item:hover a{
+     color: var(--color4);
+}
+
+.partner-button{
+     margin-left: 380px;
+     height: 65px;
+     width: 65px;
+     border-radius: 100%;
+     background-color: var(--color4);
+}
+
+.partner-button i{
+     color: var(--color1);
+     font-size: 20px;
+     padding: 20px 0 0;
+}
+
+.partner-button:hover{
+     background-color: var(--color2);
+     height: 65px;
+     width: 65px;
+     border-radius: 100%;
+}
+
+
+
+
+.content{
+     content: "";
+}
+
+.body-content{
+     margin: -20px 0 0 -60px;
+}
+
+button{
+     position: absolute;
+     width: 430px;
+     height: 78px;  
+     left: 722px;
+     top: 722px;
+     background-color: var(--color2);
+     border-radius: 20px;
+     border: none;
+     color: var(--color1);
+     font-family: var(--font);
+     font-weight: 500;
+     font-size: 20px;
+}
+
+button:hover{
+     background-color: var(--color4);
+}
+/* Food */
+
+.food-drink h1{
+     font-family: var(--font);
+     color: #325A5E;
+     font-weight: 600;
+     font-size: 30px;
+     margin-bottom: 20px
+}
+
+.content-product{
+    width: 1150px;
+    position: absolute;
+    overflow-x: scroll;
+    white-space: nowrap;
+    cursor: grabbing;
+}
+
+.content-product::-webkit-scrollbar{
+     display: none;
+}
+
+.content1{
+     margin: 0 -40px;
+     font-size: 0;
+     display: inline;
+     
+}
